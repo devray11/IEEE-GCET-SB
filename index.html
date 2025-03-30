@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IEEE GCET STUDENT BRANCH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+.w3-card
+{
+  background-color: #79b8fc;
+}
+#about
+{
+  background-color: #79b8fc;
+}
+.w3-container-w3
+{
+  background-color: #79b8fc;
+}
+
+#row{
+  background-color: #79b8fc;
+}
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("IMG_2644.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">
+      <img src="IEEE_GCET_SB_LOGO.png" alt="Logo" style="height:30px;">
+    </a>    
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button" style="color: #2c71bb;">
+        <i class="fa fa-home"></i> HOME
+    </a>
+      <a href="#about" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-info-circle"></i> ABOUT
+      </a>
+      <a href="#team" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-users"></i> TEAM
+      </a>
+      <a href="#societies" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-handshake-o"></i> SOCIETIES
+      </a>
+      <a href="#events" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-calendar"></i> EVENTS
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-envelope"></i> CONTACT
+      </a>
+  </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" 
+     style="display:none; height: 100vh; display: flex; align-items: center; justify-content: center;" 
+     id="mySidebar">
+  
+  <div>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="#societies" onclick="w3_close()" class="w3-bar-item w3-button">Societies</a>
+    <a href="#events" onclick="w3_close()" class="w3-bar-item w3-button">Events</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</nav>
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small" style="color: white; font-family: 'Poppins', sans-serif; font-weight: 900;">
+      <b>IEEE GCET STUDENT BRANCH</b>
+    </span><br>
+    
+    <span class="w3-large" style="font-family: 'Poppins', sans-serif; font-weight: 600; color: rgb(195, 188, 188);">
+      <b>Divided by branches but united by IEEE!!</b>
+    </span>
+    
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium"><b>IEEE GCET STUDENT BRANCH </b></span><br>
+    
+    <p><a href="https://forms.gle/xjtSjbb68HWr2r7K9" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-#79b8fc">Register Now</a></p>
+  </div> 
+  <div class="w3-display-bottomright w3-text-white w3-large" style="padding:580px 48px;">
+    <a href="https://www.instagram.com/ieee_gcet_sb?igsh=OWphemdrdXh4aDd5" style="margin-right: 15px; text-decoration: none;">
+      <i class="fa fa-instagram w3-hover-opacity" style="transition: color 0.3s;"></i>
+    </a>    
+    <a href="https://www.linkedin.com/in/ieee-gcet-sb-4207451a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+      <i class="fa fa-linkedin w3-hover-opacity" style="transition: color 0.3s;"></i>
+    </a>
+  </div>
+  
+</header>
+
+<!-- about -->
+<div class="w3-container" style="padding:50px 16px" id="about">
+  <div class="w3-row">
+    <div class="w3-col l12">
+      <h2>About Us</h2>
+      <p style="text-align: justify;">IEEE GCET Student Branch is a vibrant and pioneering community at G H Patel College of Engineering & Technology, dedicated to advancing technology, fostering innovation, and nurturing professional growth. As part of the globally recognized IEEE—with its unparalleled benefits such as exclusive access to the IEEE Xplore Digital Library, technical workshops, webinars, online courses, and a robust network of experts—our branch provides an invaluable platform for students to enhance their technical prowess and career opportunities. Our branch actively organizes hands-on workshops, technical seminars, and industry-interaction sessions that bridge academic learning with real-world applications. Furthermore, through collaborative projects and networking events, members gain unique insights into emerging technologies, empowering them to excel in a competitive global landscape.</p>
+
+      <p><a href="about.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Know More </a></p>
+    </div>
+  </div>
+  
+  <div class="w3-row" style="margin-top:10px">
+    <div class="w3-col l12">
+      <video class="w3-image w3-round-large" autoplay muted controls style="width:100%">
+        <source src="IMG_7359.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- About Section -->
+<div class="w3-container" style="padding:50px 16px" id="societies">
+  <h1 class="w3-center"><b>societies</b></h1>
+  <p class="w3-center w3-medium">We here provides six different societies:</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px; display: flex; justify-content: center; align-items: center; text-align: center;">
+    <div class="w3-quarter" style="max-width: 300px; margin: 16px;">
+      <img src="computer_logo.png" alt="Computer Image" 
+           style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 16px;">
+      <div style="min-height: 60px;">
+        <p class="w3-large">Computer Society</p>
+      </div>
+      <p>Focuses on advancing computing technology, software, hardware, and AI. It provides resources, conferences, and publications for computer professionals.</p>
+    </div>
+  
+    <div class="w3-quarter" style="max-width: 300px; margin: 16px;">
+      <img src="sps_logo.png" alt="Computer Image" style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 16px;">
+      <div style="min-height: 60px;">
+        <p class="w3-large">Signal Processing Society (SPS)</p>
+      </div>
+      <p>Dedicated to the theory and application of signal processing techniques. Supports innovations in audio, video, speech, and image processing.</p>
+    </div>
+  
+    <div class="w3-quarter" style="max-width: 300px; margin: 16px;">
+      <img src="ras_logo.png" alt="Computer Image" style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 16px;">
+      <div style="min-height: 60px;">
+        <p class="w3-large">Robotics and Automation Society (RAS)</p>
+      </div>
+      <p>Promotes research and development in robotics and intelligent automation. It connects engineers, researchers, and students to drive advancements in robotics.</p>
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-center" style="margin-top:64px; display: flex; justify-content: center; align-items: center; text-align: center;">
+    <div class="w3-quarter" style="max-width: 300px; margin: 16px;">
+      <img src="pes_logo.png" alt="Computer Image" 
+           style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 16px;">
+      <div style="min-height: 60px;">
+        <p class="w3-large">Industry Applications Society - Power & Energy Society (IAS-PES)</p>
+      </div>
+      <p>Works on the practical application of electrical and electronic systems in industry. Focuses on energy systems, power generation, and sustainable technologies.</p>
+    </div>
+  
+    <div class="w3-quarter" style="max-width: 300px; margin: 16px;">
+      <img src="wie_logo.png" alt="Computer Image" 
+           style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 16px;">
+      <div style="min-height: 60px;">
+        <p class="w3-large">Women in Engineering (WIE)</p>
+      </div>
+      <p>Empowers women engineers and promotes diversity in STEM fields. Organizes mentorship, workshops, and networking opportunities for women.</p>
+    </div>
+  
+    <div class="w3-quarter" style="max-width: 300px; margin: 16px;">
+      <img src="sight_logo.png" alt="Computer Image"  
+           style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 16px;">
+      <div style="min-height: 60px;">
+        <p class="w3-large">Special Interest Group on Humanitarian Technology (SIGHT)</p>
+      </div>
+      <p>Uses technology to solve humanitarian and social challenges worldwide. Engages members in impactful projects benefiting underserved communities.</p>
+    </div>
+  </div>
+  
+  
+</div>
+
+<div class="w3-container" style="padding:80px 16px; background-color:#79b8fc;" id="message">
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-center"> <!-- Changed to m4 for smaller image column -->
+      <div style="padding:20px;">
+        <img class="w3-image w3-circle" 
+             src="chairperson.png" 
+             alt="Chairperson"
+             style="width:400px; border:4px solid #ffffff; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+        <h3 style="margin-top:24px;">Jamila Kapadia</h3>
+        <p class="w3-opacity">Chairperson, IEEE GCET SB</p>
+      </div>
+    </div>
+    <div class="w3-col m8"> <!-- Expanded to m8 for larger text area -->
+      <h2 class="w3-wide">Chairperson's Message</h2>
+      <p style="text-align: justify; font-size: 1.1em; line-height: 1.6;">
+        Dear Members and Visitors,<br><br>
+        
+        It is with great pride and enthusiasm that I welcome you to the IEEE GCET Student Branch. As we continue our journey of technological exploration and innovation, I am constantly inspired by the dedication and creativity of our members. Our branch has always been a hub for aspiring engineers to transform ideas into impactful solutions, and this year, we're committed to taking this legacy to new heights.
+        
+        <br><br>Through our various initiatives - from hands-on workshops with industry experts to collaborative projects addressing real-world problems - we aim to provide a platform where technical skills meet social responsibility. I encourage every member to actively participate in our events, take leadership roles, and contribute to our growing community.
+        
+        <br><br>Remember, IEEE is more than just an organization; it's a global network of passionate individuals shaping the future of technology. Let's continue to learn, innovate, and lead together!
+      </p>
+      <p style="margin-top:32px;">
+        <a href="#contact" class="w3-button w3-white w3-large">
+          <i class="fa fa-envelope"></i> Connect With Us
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Left-aligned Slideshow -->
+<div class="w3-container" style="padding:50px 16px; background-color:white;" id="events">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <div class="w3-display-container" style="height:400px; overflow:hidden;">
+        <img class="mySlides w3-animate-left" src="IMG_2644.jpg" style="width:100%; border-radius:8px;">
+        <img class="mySlides w3-animate-left" src="Art.jpg" style="width:100%; border-radius:8px; display:none;">
+        <img class="mySlides w3-animate-left" src="AI_Crucible.png" style="width:100%; border-radius:8px; display:none;">
+        <img class="mySlides w3-animate-left" src="AI_Crucible_2.png" style="width:100%; border-radius:8px; display:none;">
+        <img class="mySlides w3-animate-left" src="ras_event_1.jpg" style="width:100%; border-radius:8px; display:none;">
+        <img class="mySlides w3-animate-left" src="AI_Crucible_2.png" style="width:100%; border-radius:8px; display:none;">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%; background-color:rgba(0,0,0,0.5); padding:10px;">
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m6">
+      <h2>Glimpses</h2>
+      <p style="text-align: justify;">To date, we have successfully executed four unique events under different IEEE societies, each reflecting our unwavering commitment to innovation and excellence. Take a moment to explore these moments and witness how they have played a pivotal role in shaping our dynamic community.</p>
+      <p>Events Completed:
+      <br>ART’25 (RAS) – February
+      <br>Sampark’25 (Gujarat Section) – February
+      <br>AI Crucible (CS) – February
+      <br>Money Matters (WIE) – March
+      <br>Workshop On Industrial Automation (RAS) – March
+      </p>
+      <br>
+      <!-- p><a href="#gallery" class="w3-button w3-blue">View Full Gallery</a></p> -->
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container-w3" style="padding:50px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Membership Drive</h3>
+      <p style="text-align: justify;">Taking IEEE membership offers numerous benefits for students and professionals in the field of engineering, technology, and science. It provides access to a global network of professionals, researchers, and experts, opening doors to valuable connections, collaborations, and career opportunities. Members gain exclusive or discounted access to the IEEE Digital Library (IEEE Xplore), which hosts thousands of research papers, journals, conference proceedings, and technical articles, helping them stay updated with the latest innovations and research. IEEE also offers various technical workshops, webinars, online courses, and certification programs that help in developing technical skills and enhancing knowledge in emerging fields like AI, robotics, IoT, and cybersecurity.
+
+        <br> <br>Additionally, IEEE members can join different technical societies and special interest groups like Computer Society, RAS, PES, WIE, and SIGHT, allowing them to focus on specific areas of interest and work on real-world projects. Leadership and volunteering opportunities help members build soft skills such as teamwork, event management, and public speaking while earning certificates and recognition. IEEE also offers scholarships, grants, and awards to support academic excellence, research projects, and participation in international conferences. Furthermore, members enjoy discounts on publications, workshops, conferences, and various partnered services and products. Overall, IEEE membership is a great platform for professional growth, skill development, and contributing to society through humanitarian and technological initiatives.</p>
+      <p><a href="coming_soon.html" class="w3-button w3-black"><i class="fa fa-th"> </i> View More</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="membership.png" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:50px 16px" id="team">
+  <h3 class="w3-center"><b>THE TEAM</b></h3>
+  <p class="w3-center w3-large">Divided By Branches But United By IEEE</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Jamila.png" alt="Jamila" style="width:100%">
+        <div class="w3-container">
+          <h3>Jamila Kapadia</h3>
+          <p class="w3-opacity">Chairperson</p>
+          <p><a href="mailto:jamilakapadia@example.com" class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="akshat.png" alt="Akshat" style="width:100%">
+        <div class="w3-container">
+          <h3>Akshat Mistry</h3>
+          <p class="w3-opacity">Vice Chairperson</p>
+          <p><a href="mailto:akshatmistry@example.com" class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="pushti.png" alt="Pushti" style="width:100%">
+        <div class="w3-container">
+          <h3>Pushti Baldha</h3>
+          <p class="w3-opacity">Secretary</p>
+          <p><a href="mailto:pushtibaldha@example.com" class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Anshita.png" alt="Anshita" style="width:100%">
+        <div class="w3-container">
+          <h3>Anshita Shah</h3>
+          <p class="w3-opacity">Treasurer</p>
+          <p><a href="mailto:anshitashah@example.com" class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button after the four team cards -->
+  <div class="w3-center" style="margin-top: 32px;">
+    <a href="team.html" class="w3-button w3-blue w3-large">See More</a>
+  </div>
+</div>
+
+
+<!-- Promo Section "Statistics" -->
+ <div class="w3-container w3-row w3-center w3-padding-64" id="row"> 
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">25</span>
+    <br>Execom members
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">15+</span>
+    <br>proposed Events
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">125+</span>
+    <br>Members
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">20+</span>
+    <br>Benefits
+  </div>
+</div>
+
+<!-- Work Section -->
+ <!--
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>-->
+
+<!-- Modal for full size images on click-->
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+ <!--
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Pricing Section -->
+ <!--
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRICING</h3>
+  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+ 
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:50px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> G H Patel College Of Engineering & Technology, Vallabh Vidyanagar, Anand, Gujarat, India</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 7046891153</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: ieeegcetsb@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.instagram.com/ieee_gcet_sb?igsh=OWphemdrdXh4aDd5" style="margin-right: 15px; text-decoration: none;">
+      <i class="fa fa-instagram w3-hover-opacity" style="transition: color 0.3s;"></i>
+    </a>    
+    <a href="https://www.linkedin.com/in/ieee-gcet-sb-4207451a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+      <i class="fa fa-linkedin w3-hover-opacity" style="transition: color 0.3s;"></i>
+    </a>
+  </div>
+  <p>Designed and Developed by <a href="https://www.linkedin.com/in/dev-ray-886a72284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" title="linked-in" class="w3-hover-text-green">Dev Ray</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+// Slideshow script
+let slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  let i;
+  const x = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+// Auto slide change every 3 seconds
+setInterval(function() {
+  plusDivs(1);
+}, 3000);
+
+</script>
+
+</body>
+</html>

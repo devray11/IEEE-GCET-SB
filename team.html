@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IEEE GCET TEAM MEMBERS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body { font-family: "Raleway", sans-serif; }
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      padding: 20px 0;
+    }
+    
+    .team-card {
+      background-color: #79b8fc;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 1200px) {
+      .team-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .team-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .team-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    .hidden {
+      display: none;
+    }
+    /* Scrollbar styling */
+    .team-container::-webkit-scrollbar {
+      height: 8px;
+    }
+    .team-container::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    .w3-button {
+    transition: all 0.3s ease;  /* Ensure smooth transition for all buttons */
+    opacity: 1;  /* Initial opacity */
+}
+
+.w3-button:hover {
+    opacity: 0.8;  /* Slight transparency on hover */
+}
+
+.buttn {
+    font-family: sans-serif;
+    border-radius: 12px;  /* Adjust curvature */
+    color: white;  /* Initial text color */
+    background: #007BFF;  /* Initial blue background */
+    border: 2px solid transparent;  /* Initial transparent border */
+    transition: all 0.3s ease;  /* Smooth transition */
+
+    padding: 5px 15px;  /* Increased padding for size */
+    font-size: 15px; 
+}
+
+.buttn:hover {
+    background: white;  /* Change background to white on hover */
+    color: blue;  /* Change text color on hover */
+    border-color: blue;  /* Add aquamarine border on hover */
+    opacity: 0.8;  /* Slight transparency for hover effect */
+}
+
+
+ </style>
+</head>
+<body>
+
+<!-- nav bar-->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">
+      <img src="IEEE_GCET_SB_LOGO.png" alt="Logo" style="height:30px;">
+    </a>    
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button" style="color: #2c71bb;">
+        <i class="fa fa-home"></i> HOME
+    </a>
+      <a href="index.html#about" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-info-circle"></i> ABOUT
+      </a>
+      <a href="index.html#team" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-users"></i> TEAM
+      </a>
+      <a href="index.html#societies" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-handshake-o"></i> SOCIETIES
+      </a>
+      <a href="index.html#events" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-calendar"></i> EVENTS
+      </a>
+      <a href="index.html#contact" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-envelope"></i> CONTACT
+      </a>
+
+      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+      </div>
+  </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+  <div class="w3-container">
+    <h2 class="w3-center">IEEE GCET TEAM MEMBERS</h2>
+    <br>
+    <div class="w3-center" section="team-year" style="margin-bottom: 20px;">
+      <button class="buttn" onclick="showTeam('Faculty')">Faculty Coordinator</button>
+      <button class="buttn" onclick="showTeam('team2025')">2025 Team</button>
+      <!-- <button class="buttn" onclick="showTeam('team2024')">2024 Team</button> -->
+      <button class="buttn" onclick="window.location.href='coming_soon.html'">2024 Team</button>
+    </div>
+
+    <div id="Faculty" class="team-container">
+      <div class="w3-card team-card">
+          <img src="Faculty_rakesh_sir.jpg" alt="Rakesh Sir" style="width:100%">
+          <div class="w3-container">
+              <h3>Rakesh Patel</h3>
+              <p class="w3-opacity">Faculty Coordinator</p>
+              <p><a href="mailto:rakeshpatel@gcet.ac.in" class="w3-button w3-light-grey w3-block">Contact</a></p>
+          </div>
+      </div>
+  </div>
+
+    <!-- Team 2024 Section -->
+    <div id="team2025" class="team-container">
+      <!-- Card 1 -->
+      <div class="w3-card team-card">
+        <img src="Jamila.png" alt="Jamila" style="width:100%">
+        <div class="w3-container">
+          <h3>Jamila Kapadia</h3>
+          <p class="w3-opacity">Chairperson</p>
+          <p><a href="mailto:pushtibaldha@example.com" class="w3-button w3-light-grey w3-block" >Contact</a></p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w3-card team-card">
+        <img src="akshat.png" alt="Akshat" style="width:100%">
+        <div class="w3-container">
+          <h3>Akshat Mistry</h3>
+          <p class="w3-opacity">Vice Chairperson</p>
+          <p><a href="mailto:member2@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w3-card team-card">
+        <img src="pushti.png" alt="pushti" style="width:100%">
+        <div class="w3-container">
+          <h3>Pushti Baldha</h3>
+          <p class="w3-opacity">Secretary</p>
+          <p><a href="mailto:member3@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="w3-card team-card">
+        <img src="Anshita.png" alt="Anshita" style="width:100%">
+        <div class="w3-container">
+          <h3>Anshita Shah</h3>
+          <p class="w3-opacity">Treasurer</p>
+          <p><a href="mailto:member4@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="w3-card team-card">
+        <img src="Shaan.png" alt="Shaan" style="width:100%">
+        <div class="w3-container">
+          <h3>Shaan Fadadu</h3>
+          <p class="w3-opacity">Membership Drive Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="w3-card team-card">
+        <img src="Riju.png" alt="Riju" style="width:100%">
+        <div class="w3-container">
+          <h3>Riju Patel</h3>
+          <p class="w3-opacity">Webmaster</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="w3-card team-card">
+        <img src="Anshita.png" alt="Anshita" style="width:100%">
+        <div class="w3-container">
+          <h3>Anshita Shah</h3>
+          <p class="w3-opacity">CS Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="w3-card team-card">
+        <img src="zainab.png" alt="Zainab" style="width:100%">
+        <div class="w3-container">
+          <h3>Zainab Jambughoda</h3>
+          <p class="w3-opacity">CS Vice Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+      <div class="w3-card team-card">
+        <img src="Dev.png" alt="Dev" style="width:100%">
+        <div class="w3-container">
+          <h3>Dev Ray</h3>
+          <p class="w3-opacity">SPS Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="w3-card team-card">
+        <img src="sujal.png" alt="Sujal" style="width:100%">
+        <div class="w3-container">
+          <h3>Sujal Sutariya</h3>
+          <p class="w3-opacity">SPS Vice Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="w3-card team-card">
+        <img src="riju.png" alt="Riju" style="width:100%">
+        <div class="w3-container">
+          <h3>Riju Patel</h3>
+          <p class="w3-opacity">RAS Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="parshva.png" alt="parshva" style="width:100%">
+        <div class="w3-container">
+          <h3>Parshva Shah</h3>
+          <p class="w3-opacity">RAS Vice Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="shaan.png" alt="shaan" style="width:100%">
+        <div class="w3-container">
+          <h3>Shaan Fadadu</h3>
+          <p class="w3-opacity">IAS - PES Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="rudraksh.png" alt="Rudraksh" style="width:100%">
+        <div class="w3-container">
+          <h3>Rudraksh Shah</h3>
+          <p class="w3-opacity">IAS - PES Vice Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="stavan.png" alt="stavan" style="width:100%">
+        <div class="w3-container">
+          <h3>Stavan Shah</h3>
+          <p class="w3-opacity">SIGHT Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="arth.png" alt="arth" style="width:100%">
+        <div class="w3-container">
+          <h3>Arth Patel</h3>
+          <p class="w3-opacity">SIGHT Vice Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="miral.png" alt="miral" style="width:100%">
+        <div class="w3-container">
+          <h3>Miral Desai</h3>
+          <p class="w3-opacity">WIE Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="yashvi.png" alt="yashvi" style="width:100%">
+        <div class="w3-container">
+          <h3>Yashvi Jasani</h3>
+          <p class="w3-opacity">WIE Vice Chairperson</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="Dev.png" alt="Dev" style="width:100%">
+        <div class="w3-container">
+          <h3>Dev Ray</h3>
+          <p class="w3-opacity">Outreach Coordinator</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="datt.png" alt="Datt" style="width:100%">
+        <div class="w3-container">
+          <h3>Datt Patel</h3>
+          <p class="w3-opacity">Outreach Coordinator</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="bhoomika.png" alt="bhoomika" style="width:100%">
+        <div class="w3-container">
+          <h3>Bhoomika Vasani</h3>
+          <p class="w3-opacity">Joint Secretary</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="priyanshi.png" alt="priyanshi" style="width:100%">
+        <div class="w3-container">
+          <h3>Priyanshi Baria</h3>
+          <p class="w3-opacity">Joint Secretary</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="yashvi.png" alt="yashvi" style="width:100%">
+        <div class="w3-container">
+          <h3>Yashvi Jasani</h3>
+          <p class="w3-opacity">Joint Secretary</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+    
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="meet.png" alt="meet" style="width:100%">
+        <div class="w3-container">
+          <h3>Meet Rana</h3>
+          <p class="w3-opacity">Joint Treasurer</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="Aditya.png" alt="Aditya" style="width:100%">
+        <div class="w3-container">
+          <h3>Aditya Valaki</h3>
+          <p class="w3-opacity">Joint Treasurer</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="Aditya.png" alt="Aditya" style="width:100%">
+        <div class="w3-container">
+          <h3>Aditya Valaki</h3>
+          <p class="w3-opacity">Joint Treasurer</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="Aditya.png" alt="Aditya" style="width:100%">
+        <div class="w3-container">
+          <h3>Aditya Valaki</h3>
+          <p class="w3-opacity">Joint Treasurer</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+       <!-- Card 9 -->
+       <div class="w3-card team-card">
+        <img src="Aditya.png" alt="Aditya" style="width:100%">
+        <div class="w3-container">
+          <h3>Aditya Valaki</h3>
+          <p class="w3-opacity">Joint Treasurer</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <div class="w3-card team-card">
+        <img src="husaina.png" alt="husaina" style="width:100%">
+        <div class="w3-container">
+          <h3>Husaina Mahudawala</h3>
+          <p class="w3-opacity">CP Branch Coordinator</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <div class="w3-card team-card">
+        <img src="murtaza.png" alt="Murtaza" style="width:100%">
+        <div class="w3-container">
+          <h3>Murtaza Kapadia</h3>
+          <p class="w3-opacity">CSD Branch Coordinator</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <div class="w3-card team-card">
+        <img src="shreya.png" alt="shreya" style="width:100%">
+        <div class="w3-container">
+          <h3>Shreya Patel</h3>
+          <p class="w3-opacity">IT Branch Coordinator</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <div class="w3-card team-card">
+        <img src="krisha.png" alt="Krisha" style="width:100%">
+        <div class="w3-container">
+          <h3>Krisha Prajapati</h3>
+          <p class="w3-opacity">IoT Branch Coordinator</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <div class="w3-card team-card">
+        <img src="het.png" alt="het" style="width:100%">
+        <div class="w3-container">
+          <h3>Het Patel</h3>
+          <p class="w3-opacity">MC/ME Branch Coordinator</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <div class="w3-card team-card">
+        <img src="meet.png" alt="meet" style="width:100%">
+        <div class="w3-container">
+          <h3>Meet Rana</h3>
+          <p class="w3-opacity">CH/CL Branch Coordinator</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+      <div class="w3-card team-card">
+        <img src="rishi.png" alt="rishi" style="width:100%">
+        <div class="w3-container">
+          <h3>Rishi Bhut</h3>
+          <p class="w3-opacity">EE/EC/ICT Branch Coordinator</p>
+          <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+        </div>
+      </div>
+
+
+    </div>
+    
+
+    <!-- Team 2025 Section -->
+    <div id="team2024" class="team-container hidden">
+        <div class="w3-card team-card">
+            <img src="/w3images/team3.jpg" alt="Pushti" style="width:100%">
+            <div class="w3-container">
+              <h3>Pushti Baldha</h3>
+              <p class="w3-opacity">Secretary</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><a href="mailto:pushtibaldha@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+            </div>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="w3-card team-card">
+            <img src="/w3images/team3.jpg" alt="Member" style="width:100%">
+            <div class="w3-container">
+              <h3>Member 2</h3>
+              <p class="w3-opacity">Position</p>
+              <p>Description text here. Suspendisse sodales pellentesque elementum.</p>
+              <p><a href="mailto:member2@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+            </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="w3-card team-card">
+            <img src="/w3images/team3.jpg" alt="Member" style="width:100%">
+            <div class="w3-container">
+              <h3>Member 3</h3>
+              <p class="w3-opacity">Position</p>
+              <p>Description text here. Suspendisse sodales pellentesque elementum.</p>
+              <p><a href="mailto:member3@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+            </div>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="w3-card team-card">
+            <img src="/w3images/team3.jpg" alt="Member" style="width:100%">
+            <div class="w3-container">
+              <h3>Member 4</h3>
+              <p class="w3-opacity">Position</p>
+              <p>Description text here. Suspendisse sodales pellentesque elementum.</p>
+              <p><a href="mailto:member4@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+            </div>
+          </div>
+    
+          <!-- Card 5 -->
+          <div class="w3-card team-card">
+            <img src="/w3images/team3.jpg" alt="Member" style="width:100%">
+            <div class="w3-container">
+              <h3>Member 5</h3>
+              <p class="w3-opacity">Position</p>
+              <p>Description text here. Suspendisse sodales pellentesque elementum.</p>
+              <p><a href="mailto:member5@example.com" class="w3-button w3-light-grey w3-block">Contact</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.instagram.com/ieee_gcet_sb?igsh=OWphemdrdXh4aDd5" style="margin-right: 15px; text-decoration: none;">
+        <i class="fa fa-instagram w3-hover-opacity" style="transition: color 0.3s;"></i>
+      </a>    
+      <a href="https://www.linkedin.com/in/ieee-gcet-sb-4207451a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+        <i class="fa fa-linkedin w3-hover-opacity" style="transition: color 0.3s;"></i>
+      </a>
+    </div>
+    <p>Designed and Developed by <a href="https://www.linkedin.com/in/dev-ray-886a72284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" title="linked-in" class="w3-hover-text-green">Dev Ray</a></p>
+  </footer>
+
+  <script>
+
+    // Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+    function showTeam(teamId) {
+      // Hide all teams
+      document.querySelectorAll('.team-container').forEach(team => {
+        team.classList.add('hidden');
+      });
+      // Show selected team
+      document.getElementById(teamId).classList.remove('hidden');
+    }
+    
+    // Show 2024 team by default
+    showTeam('team2025');
+  </script>
+</body>
+</html>

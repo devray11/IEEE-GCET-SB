@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IEEE GCET STUDENT BRANCH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {height: 100%; line-height: 1.8;}
+
+/* Improved icon alignment */
+.icon-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px; /* Minimum height to ensure proper centering */
+}
+
+.icon-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .icon-column {
+    min-height: auto;
+    padding: 40px 0;
+  }
+  .icon-container {
+    margin: 10px 0;
+  }
+}
+
+/* Section padding adjustments */
+.section-padding {
+  padding: 80px 16px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15x; /* Increased padding */
+    margin-top: 60px; /* Add space before footer */
+    position: relative; /* Changed from fixed */
+    width: 100%;
+}
+
+/* Add this to create space for content */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px; /* Footer height compensation */
+}
+
+/* Add hover effects for social icons */
+.fa-instagram:hover {
+    color: #E1306C !important;
+}
+
+.fa-linkedin:hover {
+    color: #0077B5 !important;
+}
+</style>
+</head>
+<body>
+
+<!-- nav bar-->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">
+      <img src="IEEE_GCET_SB_LOGO.png" alt="Logo" style="height:30px;">
+    </a>    
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button" style="color: #2c71bb;">
+        <i class="fa fa-home"></i> HOME
+    </a>
+      <a href="index.html#about" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-info-circle"></i> ABOUT
+      </a>
+      <a href="index.html#team" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-users"></i> TEAM
+      </a>
+      <a href="index.html#societies" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-handshake-o"></i> SOCIETIES
+      </a>
+      <a href="index.html#events" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-calendar"></i> EVENTS
+      </a>
+      <a href="index.html#contact" class="w3-bar-item w3-button" style="color: #2c71bb;">
+          <i class="fa fa-envelope"></i> CONTACT
+      </a>
+
+      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+      </div>
+  </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+  
+<!-- About Section with Alternating Colors -->
+<div id="about">
+  <h1 class="w3-center" style="background-color: #79b8fc; color: white; font-size: 30px; object-fit: none; padding-top: 45px;"><b>About Us</b></h1>
+    <!-- Introduction Section -->
+    <div class="w3-container section-padding" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="w3-row-padding">
+          <div class="w3-col m6 icon-column">
+            <div class="icon-container">
+              <i class="fa fa-university w3-jumbo w3-text-blue"></i>
+            </div>
+          </div>
+          <div class="w3-col m6">
+            <h2>IEEE GCET Student Branch</h2>
+            <p style="text-align: justify;">IEEE GCET Student Branch is a vibrant and pioneering community at G H Patel College of Engineering & Technology, dedicated to advancing technology, fostering innovation, and nurturing professional growth. As part of the globally recognized IEEE—with its unparalleled benefits such as exclusive access to the IEEE Xplore Digital Library, technical workshops, webinars, online courses, and a robust network of experts—our branch provides an invaluable platform for students to enhance their technical prowess and career opportunities.</p>
+          </div>
+        </div>
+    </div>
+
+    <!-- Mission Section (Blue) -->
+    <div class="w3-container section-padding" style="background-color:#79b8fc; color:white; padding-top: 20px; padding-bottom: 20px;">
+       <div class="w3-row-padding">
+         <div class="w3-col m6">
+           <h2>Our Mission</h2>
+           <p style="text-align: justify;">At IEEE GCET Student Branch, our mission is to empower students with cutting-edge knowledge and skills, fostering an environment that encourages innovation and leadership. We actively organize and participate in technical symposiums, hands-on workshops, seminars, and student-led events such as the highly anticipated Student Professional Awareness Conferences. Our regular initiatives—ranging from "Techronicle," our branch's in-house magazine that keeps members informed about the latest technological trends, to collaborative events with other IEEE branches and chapters—ensure that our members are not only consumers of knowledge but also contributors to the evolving landscape of engineering and technology.</p>
+         </div>
+         <div class="w3-col m6 icon-column">
+           <div class="icon-container">
+             <i class="fa fa-bullseye w3-jumbo"></i>
+           </div>
+         </div>
+       </div>
+    </div>
+   
+    <!-- Community Section (White) -->
+    <div class="w3-container section-padding" style="padding-top: 20px; padding-bottom: 20px;">
+       <div class="w3-row-padding">
+         <div class="w3-col m6 icon-column">
+           <div class="icon-container">
+             <i class="fa fa-users w3-jumbo w3-text-blue"></i>
+           </div>
+         </div>
+         <div class="w3-col m6">
+           <h2>Our Community</h2>
+           <p style="text-align: justify;">With over 200 active members, and today, our branch is proudly guided by the leadership of Dr. Rakesh Patel as the Branch Counsellor and Jamila Kapadia as the Chairperson, alongside a dedicated team of energetic volunteers. Their unwavering commitment ensures that our activities are innovative, inclusive, and aligned with IEEE's global mission of advancing technology for the benefit of humanity. The branch continuously evolves, leveraging the extensive resources of IEEE to provide workshops in emerging fields like artificial intelligence, robotics, IoT, and cybersecurity, while also facilitating networking opportunities that connect students with industry experts and researchers worldwide.</p>
+         </div>
+       </div>
+    </div>
+   
+    <!-- History Section (Blue) -->
+    <div class="w3-container section-padding" style="background-color:#79b8fc; color:white; padding-top: 20px; padding-bottom: 20px;">
+       <div class="w3-row-padding">
+         <div class="w3-col m6">
+           <h2>Our Inception and Legacy</h2>
+           <p style="text-align: justify;">Our journey began when the GCET IEEE branch was approved by IEEE Headquarters in New York on February 28, 2006. The founding team, comprising 29 enthusiastic student members and 2 executive members, was spearheaded by Dr. Ketan Kotecha (Branch Counsellor), Mr. Nilesh Modi (Branch Mentor), and Prerit Souda as the inaugural Branch Chairperson. As the first IEEE student branch established within the Gujarat Section of IEEE's Asia-Pacific Region, our inception marked a significant milestone in making IEEE's world-class resources and professional development opportunities accessible to budding engineers in Gujarat. Over the years, we have built upon this strong foundation, growing both in membership and in the scope of our technical and professional initiatives.</p>
+         </div>
+         <div class="w3-col m6 icon-column">
+           <div class="icon-container">
+             <i class="fa fa-history w3-jumbo"></i>
+           </div>
+         </div>
+       </div>
+    </div>
+   
+    <!-- Future Section (White) -->
+<!-- Future Section (White) -->
+<div class="w3-container section-padding" style="padding-top: 20px; padding-bottom: 20px; margin-bottom: 0">
+  <div class="w3-row-padding">
+    <div class="w3-col m6 icon-column">
+      <div class="icon-container">
+        <i class="fa fa-road w3-jumbo w3-text-blue"></i>
+      </div>
+    </div>
+    <div class="w3-col m6">
+      <h2>Looking Ahead</h2>
+      <p style="text-align: justify;">As we honor our rich history and the pioneering spirit of our founding members, IEEE GCET Student Branch remains steadfast in its commitment to professional excellence and technological innovation. We invite all aspiring engineers to join us in our journey of learning, collaboration, and growth, and to take advantage of the myriad opportunities that IEEE membership offers. Together, we continue to shape a future where technology and humanity advance hand in hand.</p>
+    </div>
+  </div>
+</div>
+</div>
+<footer>
+  <div class="w3-xlarge w3-section">
+      <a href="https://www.instagram.com/ieee_gcet_sb?igsh=OWphemdrdXh4aDd5" style="margin-right: 15px; text-decoration: none;">
+          <i class="fa fa-instagram w3-hover-opacity" style="transition: color 0.3s;"></i>
+      </a>    
+      <a href="https://www.linkedin.com/in/ieee-gcet-sb-4207451a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+          <i class="fa fa-linkedin w3-hover-opacity" style="transition: color 0.3s;"></i>
+      </a>
+  </div>
+  <p>Designed and Developed by <a href="https://www.linkedin.com/in/dev-ray-886a72284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" title="linked-in" class="w3-hover-text-green">Dev Ray</a></p>
+</footer>
+</body>
+</html>
